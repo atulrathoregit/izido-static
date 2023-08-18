@@ -504,32 +504,22 @@ nav.sticky {
 /* section 5 & 6 css end*/
 
 /* section 8 css */
-.section8 {
-  position: relative;
-  /* height: 100vh; */
+.section8 .shape1{
+    position: absolute;
+    top: -113px;
+    z-index: -1;
 }
 
-.section8 .img-field {
-  position: relative;
-  z-index: -1;
-}
-
-.section8 .img-field img {
-  width: 20%;
-}
-
-.section8 .text-box {
-  position: absolute;
-  z-index: 1;
-  top: 50px;
-  /* transform: translate(10%); */
-  left: 2%;
-  right: 2%;
-}
-
-.section8 .img-2 {
+.section8 .shape2 {
   transform: rotatey(180deg);
   float: right;
+}
+
+.section8 .shape2{
+    position: absolute;
+    top: -113px;
+    right: 0;
+    z-index: -1;
 }
 
 .section8 hr {
@@ -546,25 +536,6 @@ nav.sticky {
   border-radius: 18px;
 }
 
-/* media query */
-@media (max-width: 1199.98px){
-    .section8{
-        height: 105vh;
-    }
-}
-
-@media (max-width: 991.98px){
-    .section8{
-        height: 110vh;
-    }
-}
-
-@media (max-width: 767.98px){
-    .section8{
-        height: 200vh;
-    }
-}
-
 @media (max-width: 575.98px){
     .section8{
         height: 205vh;
@@ -577,6 +548,22 @@ nav.sticky {
 /* section 8 css end */
 
 /* section 9 css */
+.pd-top{
+    margin: 8rem 2rem 4rem;
+}
+
+@media (max-width: 575.98px) {
+    .pd-top{
+        margin: 25rem 2rem 4rem;
+    } 
+}
+
+@media (max-width: 320.98px) {
+    .pd-top{
+        margin: 35rem 2rem 4rem;
+    } 
+}
+
 .section9 .accordion-button:not(.collapsed) {
   color: var(--dark-brown-color);
   background-color: #bba89c2e;
@@ -686,13 +673,12 @@ nav.sticky {
     .section10 .contact-us-form .px-5{
         padding: 0px 0px!important;
     }
+
+    .section10 .contact-img{
+        left: 10px;
+    }
 }
 /* section 10 css end */
-
-/* footer{
-    position: relative;
-    top: 130px;
-} */
 
 footer {
   background: var(--color-FF914C);
