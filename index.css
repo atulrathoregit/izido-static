@@ -22,6 +22,9 @@
   --bg-FBFBFB: #fbfbfb;
   --bg-light-blue: #abcde2;
   --bg-f6f6f6: #f6f6f6;
+  --bg-F97D11: #f97d11;
+  --bg-640000a3: #640000a3;
+  --bg-93473580: #93473580;
 
   /* text-color */
   --dark-brown-color: #640000;
@@ -40,6 +43,7 @@
 
 a {
   text-decoration: none;
+  color: inherit;
 }
 
 a:hover {
@@ -90,6 +94,7 @@ body {
 
 html {
   font-size: 64.58%;
+  overflow-x: hidden;
   font-weight: 400;
   scroll-behavior: smooth;
   line-height: 1.5;
