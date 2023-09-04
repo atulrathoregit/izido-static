@@ -256,7 +256,7 @@ nav.sticky {
   top: 0;
   height: 800px;
   background-position: bottom center;
-  padding: 150px 0 50px;
+  padding: 150px 0 0;
 }
 
 .header-hero-content{
@@ -274,6 +274,19 @@ nav.sticky {
   z-index: -1;
 }
 
+/* media query */
+@media (max-width: 991.98px) {
+  .header-hero{
+   height: auto;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .header-hero .header-hero-content{
+    padding: 0 2rem;
+  }
+}
+
 /* offer area css start*/
 .offer-area {
   background: linear-gradient(
@@ -285,61 +298,59 @@ nav.sticky {
 /* offer area css end*/
 
 /* our feature css */
-/* .feature{
-  position: relative;
-  height: 100vh;
-} */
-
-.feature .card-field{
-  width: 80%;
-  position: relative;
+.pd-4{
+  padding: 4rem 0rem;
 }
 
-.card {
-  position: absolute;
-  top: 50%;
-  left: 50%;
+.flip-card {
+  background-color: transparent;
   width: 300px;
-  height: 300px;
-  margin: -150px;
-  float: left;
-  perspective: 500px;
+  height: 350px;
+  perspective: 1000px;
 }
 
-.content {
-  position: absolute;
+.flip-card-inner {
+  position: relative;
   width: 100%;
   height: 100%;
-  box-shadow: 0 0 15px rgba(0,0,0,0.1);
-
-  transition: transform 1s;
-  transform-style: preserve-3d;
-}
-
-.card:hover .content {
-  transform: rotateY( 180deg ) ;
-  transition: transform 0.5s;
-}
-
-.front,
-.back {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  background: white;
-  line-height: 300px;
-  color: #03446A;
   text-align: center;
-  font-size: 60px;
-  border-radius: 5px;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card-inner .read-btn{
+  position: absolute;
+  bottom: 0;
+  left: 45px;
+  width: 50%;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 }
 
-.back {
-  background: #03446A;
-  color: white;
-  transform: rotateY( 180deg );
+.flip-card-front {
+  background-color: #f8f9fa;
+  color: black;
 }
+
+.flip-card-back {
+  background-color: #f8f9fa;
+  color: var(--dark-brown-color);
+  display: flex;
+  align-items: center;
+  transform: rotateY(180deg);
+}
+
 
 /* app promotion css */
 .app-promotion {
