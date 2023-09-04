@@ -299,7 +299,7 @@ nav.sticky {
 
 /* our feature css */
 .pd-4{
-  padding: 4rem 0rem;
+  padding: 1rem 0rem;
 }
 
 .flip-card {
@@ -363,6 +363,16 @@ nav.sticky {
     width: 50%;
   }
 }
+
+@media (max-width: 335.98px) {
+  .flip-card {
+    width: 250px;
+  }
+
+  .flip-card-inner .read-btn{
+    left: 30px;
+  }
+}
 /* app promotion css end */
 
 /* advetise with us css */
@@ -394,7 +404,7 @@ nav.sticky {
 }
 
 .section8 .text-box{
-  padding: 10rem 0;
+  padding: 10rem 0 0;
 }
 
 .section8 .section8-bg {
@@ -404,7 +414,7 @@ nav.sticky {
 
 @media (max-width: 575.98px) {
   .section8 {
-    height: 205vh;
+    height: auto;
   }
 
   .section8 hr {
@@ -543,6 +553,12 @@ nav.sticky {
 }
 
 @media (max-width: 575.98px) {
+  .modal .modal-body .contact-us-form,
+  .section10 .contact-us-form{
+    left: 0;
+    width: 100%;
+  }
+
   .section10 .contact-us-form .px-5 {
     padding: 0px 0px !important;
   }
