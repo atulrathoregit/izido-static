@@ -605,5 +605,9 @@ footer a:hover {
   .request-img{
     width: 300px;
   }
+
+  .modal .modal-body .contact-img{
+    top: 0;
+  }
 }
 
