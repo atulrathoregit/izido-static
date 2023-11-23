@@ -246,6 +246,7 @@ a {
   width: 100%;
 }
 
+.navbar .navbar-nav .nav-item :hover,
 .navbar .navbar-nav .nav-item .active,
 .navbar .navbar-nav .nav-item :focus {
   color: var(--color-FF914C);
@@ -253,6 +254,12 @@ a {
 
 nav.sticky {
   background: var(--bg-light-blue);
+}
+
+@media (max-width:768px){
+  .navbar {
+    background: var(--bg-light-blue);
+  }
 }
 /* header section css end */
 .main-bg {
@@ -291,12 +298,19 @@ nav.sticky {
 }
 
 @media (max-width: 575.98px) {
+  .main-bg {
+    height: auto;
+  }
   .main img {
     width: 60%;
   }
 
   .main .sm-pd {
     padding: 0 2rem;
+  }
+
+  .mb-15{
+    margin-bottom: 15px;
   }
 }
 
@@ -341,8 +355,9 @@ nav.sticky {
 
 /* media-query */
 @media (max-width: 991.98px){
-    .section3 .img-box img{
-        width: 80%;
+    .section3 .img-box {
+        display: block;
+        text-align: center;
     }
 }
 
@@ -359,7 +374,7 @@ nav.sticky {
 
 @media (max-width: 575.98px) {
     .section3 {
-      top: 260px;
+      top: 310px;
       margin-bottom: 250px;
     }
   }
@@ -709,4 +724,15 @@ footer a:hover {
 
 .navFooterLinkLine ul li {
   list-style: none;
+}
+
+.btn{
+  cursor: pointer;
+}
+
+.coming-soon-text{
+  position: absolute;
+  right: 10px;
+  font-weight: 600;
+  color: red;
 }

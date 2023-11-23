@@ -196,16 +196,9 @@ a {
 /* common css end */
 
 /* header section css */
-.navbar-area{
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-}
-
 .navbar{
-  position: relative;
-  /* padding: 20px 0; */
+  /* background: var(--bg-color-BBA89C); */
+  background: var(--bg-white);
 }
 
 .navbar .navbar-nav .nav-item {
@@ -496,7 +489,7 @@ nav.sticky {
 
 .modal .modal-body .parent-box,
 .section10 .parent-box {
-  height: 600px;
+  /* height: 600px; */
   width: 500px;
   overflow: hidden;
   float: right;
@@ -509,8 +502,10 @@ nav.sticky {
     var(--light-brown-color),
     var(--primary-color)
   );
-  height: 500px;
-  width: 500px;
+  /* height: 500px;
+  width: 500px; */
+  height: 300px;
+  width: 300px;
   border-radius: 136px;
   transform: rotateZ(45deg);
 }
@@ -518,7 +513,8 @@ nav.sticky {
 .modal .modal-body .box-shape,
 .section10 .parent-box .box-shape {
   position: relative;
-  right: -235px;
+  /* right: -235px; */
+  right: -369px;
   top: 50px;
 }
 
@@ -594,3 +590,20 @@ footer a:hover {
 .navFooterLinkLine ul li {
   list-style: none;
 }
+
+.request-us-form{
+  position: absolute;
+    top: 44%;
+    left: 10%;
+    width: 90%;
+}
+
+@media(max-width:769px){
+  .request-us-form{
+    top: 25%;
+  }
+  .request-img{
+    width: 300px;
+  }
+}
+
