@@ -1,533 +1,590 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IZIDO</title>
-    <link rel="icon" href="assets/favicon.png">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>IZIDO</title>
+        <link rel="icon" href="assets/favicon.png">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        crossorigin="anonymous" referrerpolicy="no-referrer"/>
 
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
         crossorigin="anonymous"></script>
 
-</head>
+    </head>
 
-<body>
-    <!-- header section -->
-    <header>
-        <nav class="navbar navbar-expand-lg px-5 fixed-top">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">
-                    <img src="assets/logo.png" alt="" width="70">
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+    <body>
+        <!-- header section -->
+        <header>
+            <nav class="navbar navbar-expand-lg px-5 fixed-top">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">
+                        <img src="assets/logo.png" alt="" width="70">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#abtus">About us</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#howplay">How does it work</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#faq">FAQ's</a>
-                        </li>
-                        <!-- <li class="nav-item">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#abtus">About us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#howplay">How does it work</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#faq">FAQ's</a>
+                            </li>
+                            <!-- <li class="nav-item">
                             <a class="nav-link" href="#contact">Contact us</a>
                         </li> -->
-                        <li class="nav-item">
-                            <a class="nav-link" href="/ad.html">Advertise with us</a>
-                        </li>
-                    </ul>
-                    <div>
-                        <a href="https://play.google.com/store/apps/details?id=com.calance.moneyquiz"
+                            <li class="nav-item">
+                                <a class="nav-link" href="ad.html">Advertise with us</a>
+                            </li>
+                        </ul>
+                        <div>
+                            <a href="https://play.google.com/store/apps/details?id=com.calance.moneyquiz"
                             class="btn f-18 text-poppins fw-bold download-btn">Download App</a>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </nav>
-    </header>
-    <!-- header section end-->
+            </nav>
+        </header>
+        <!-- header section end-->
 
-    <!-- main-section -->
-    <div class="main main-bg">
-        <div class="container main-container mb-5">
-            <div class="row">
-                <div class="col-sm-6 col-md-6 col-lg-7 col-xl-7 col-12 m-auto sm-pd">
-                    <!-- <h1 class="text-light-brown f-62">Best Place to</h1> -->
-                    <h2 class="text-orange f-58 mt-4">Interact with Brands and Cashout!</h2>
-                    <p class="text-light-brown f-28 mt-5 f-500">Get rewarded for answering
-                        questions after watching ads.</p>
-                    <div class="mt-5 mb-15">
-                        <a href="https://play.google.com/store/apps/details?id=com.calance.moneyquiz"
+        <!-- main-section -->
+        <div class="main main-bg">
+            <div class="container main-container mb-5">
+                <div class="row">
+                    <div class="col-sm-6 col-md-6 col-lg-7 col-xl-7 col-12 m-auto sm-pd">
+                        <!-- <h1 class="text-light-brown f-62">Best Place to</h1> -->
+                        <h2 class="text-orange f-58 mt-4">Interact with Brands and Cashout!</h2>
+                        <p class="text-light-brown f-28 mt-5 f-500">Don't Miss Out on Izido Quiz: Where Knowledge Wins Rewards!.</p>
+                        <p class="text-light-brown f-18 mt-5 f-500">Join the excitement and thrill of Izido Quiz, where your knowledge can earn you real money in real-time! Challenge yourself, compete with others, and win big prizes—test your skills and see how much you can win today!</p>
+                        <div class="mt-5 mb-15">
+                            <a href="https://play.google.com/store/apps/details?id=com.calance.moneyquiz"
                             class="btn f-18 text-poppins fw-bold get-btn">Get Started</a>
+                        </div>
                     </div>
-                </div>
-                <div class="col-sm-6 col-md-6 col-lg-5 col-xl-5 col-12 order-sm-last order-first">
-                    <div class="img-field text-center">
-                        <img src="assets/hero-img.png" alt="" class="img-fluid">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- section 2 -->
-    <div class="section2 section-icon position-relative">
-        <div class="section2-box position-absolute top-0 start-50 translate-middle">
-            <div class="row">
-                <div class="col-sm-3 col-md-3 col-lg-3 col-6">
-                    <div class="icon-box text-center m-auto">
-                        <i class="fa-solid fa-users f-42"></i>
-                    </div>
-                    <div class="text-center">
-                        <!-- <div class="mt-3 f-20 f-500 text-dark-brown">10000+</div> -->
-                        <p class="f-14 text-grey text-uppercase mt-3 f-500">many registered users</p>
-                    </div>
-                </div>
-                <div class="col-sm-3 col-md-3 col-lg-3 col-6">
-                    <div class="icon-box text-center m-auto">
-                        <i class="fa-solid fa-indian-rupee-sign f-42"></i>
-                    </div>
-                    <div class="text-center">
-                        <!-- <div class="mt-3 f-20 f-500 text-dark-brown">10000+</div> -->
-                        <p class="f-14 text-grey text-uppercase mt-3 f-500">lots of money withdrawn per day</p>
-                    </div>
-                </div>
-                <div class="col-sm-3 col-md-3 col-lg-3 col-6">
-                    <div class="icon-box text-center m-auto">
-                        <i class="fa-solid fa-rectangle-ad f-42"></i>
-                    </div>
-                    <div class="text-center">
-                        <!-- <div class="mt-3 f-20 f-500 text-dark-brown">10000+</div> -->
-                        <p class="f-14 text-grey text-uppercase mt-3 f-500">various ads per month</p>
-                    </div>
-                </div>
-                <div class="col-sm-3 col-md-3 col-lg-3 col-6">
-                    <div class="icon-box text-center m-auto">
-                        <i class="fa-solid fa-question f-42"></i>
-                    </div>
-                    <div class="text-center">
-                        <!-- <div class="mt-3 f-20 f-500 text-dark-brown">10000+</div> -->
-                        <p class="f-14 text-grey text-uppercase mt-3 f-500">many quiz per day</p>
+                    <div class="col-sm-6 col-md-6 col-lg-5 col-xl-5 col-12 order-sm-last order-first">
+                        <div class="img-field text-center">
+                            <img src="assets/hero-img.png" alt="" class="img-fluid">
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <!-- section 3 download section-->
-    <div class="section3 text-poppins">
-        <div class="container-fluid p-5">
-            <div class="row">
-                <div class="col-sm-12 col-md-6 col-12 p-5 m-auto">
-                    <p class="f-28 text-dark-brown">Download the best advertising platform on</p>
-                    <div class="img-box mt-5">
-                        <!-- <a href="#" class="position-relative">
+        <!-- section 2 -->
+        <div class="section2 section-icon position-relative">
+            <div class="section2-box position-absolute top-0 start-50 translate-middle">
+                <div class="row">
+                    <div class="col-sm-3 col-md-3 col-lg-3 col-6">
+                        <div class="icon-box text-center m-auto">
+                            <i class="fa-solid fa-users f-42"></i>
+                        </div>
+                        <div class="text-center">
+                            <!-- <div class="mt-3 f-20 f-500 text-dark-brown">10000+</div> -->
+                            <p class="f-14 text-grey text-uppercase mt-3 f-500">many registered users</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 col-md-3 col-lg-3 col-6">
+                        <div class="icon-box text-center m-auto">
+                            <i class="fa-solid fa-indian-rupee-sign f-42"></i>
+                        </div>
+                        <div class="text-center">
+                            <!-- <div class="mt-3 f-20 f-500 text-dark-brown">10000+</div> -->
+                            <p class="f-14 text-grey text-uppercase mt-3 f-500">lots of money withdrawn per day</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 col-md-3 col-lg-3 col-6">
+                        <div class="icon-box text-center m-auto">
+                            <i class="fa-solid fa-rectangle-ad f-42"></i>
+                        </div>
+                        <div class="text-center">
+                            <!-- <div class="mt-3 f-20 f-500 text-dark-brown">10000+</div> -->
+                            <p class="f-14 text-grey text-uppercase mt-3 f-500">various ads per month</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 col-md-3 col-lg-3 col-6">
+                        <div class="icon-box text-center m-auto">
+                            <i class="fa-solid fa-question f-42"></i>
+                        </div>
+                        <div class="text-center">
+                            <!-- <div class="mt-3 f-20 f-500 text-dark-brown">10000+</div> -->
+                            <p class="f-14 text-grey text-uppercase mt-3 f-500">many quiz per day</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- section 3 download section-->
+        <div class="section3 text-poppins">
+            <div class="container-fluid p-5">
+                <div class="row">
+                    <div class="col-sm-12 col-md-6 col-12 p-5 m-auto">
+                        <p class="f-28 text-dark-brown">Download the best advertising platform on</p>
+                        <div class="img-box mt-5">
+                            <!-- <a href="#" class="position-relative">
                             <img src="assets/comigsoon.png" alt="ios store" width="200" height="70" class="p-1">
                         </a> -->
-                        <div href="#" class="position-relative">
-                            <img src="assets/comigsoon.png" alt="ios store" width="200" height="70" class="p-1">
+                            <div href="#" class="position-relative">
+                                <img src="assets/comigsoon.png" alt="ios store" width="200" height="70" class="p-1">
+                            </div>
+                            <a href="https://play.google.com/store/apps/details?id=com.calance.moneyquiz">
+                                <img src="assets/playstore.png" alt="play store" width="200" height="70" class="p-1">
+                            </a>
                         </div>
-                        <a href="https://play.google.com/store/apps/details?id=com.calance.moneyquiz">
-                            <img src="assets/playstore.png" alt="play store" width="200" height="70" class="p-1">
-                        </a>
                     </div>
-                </div>
-                <div class="col-sm-12 col-md-6 col-12 p-5 m-auto text-center">
-                    <div class="gif-box">
-                        <img src="assets/play-gif.gif" alt="">
+                    <div class="col-sm-12 col-md-6 col-12 p-5 m-auto text-center">
+                        <div class="gif-box">
+                            <img src="assets/play-gif.gif" alt="">
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <!-- section 4 withdraw section-->
-    <div class="section4 section4-bg p-5 text-poppins">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-6 col-md-6 col-12 py-5 m-auto">
-                    <p class="text-light-brown f-28 mt-5">Withdraw your daily rewards.</p>
-                    <p class="text-med-brown f-20 mt-5">Transfer your winnings to your account in just a minute through
+        <!-- section 4 withdraw section-->
+        <div class="section4 section4-bg p-5 text-poppins">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 col-md-6 col-12 py-5 m-auto">
+                        <p class="text-light-brown f-28 mt-5">Withdraw your daily rewards.</p>
+                        <p class="text-med-brown f-20 mt-5">Transfer your winnings to your account in just a minute through
                         UPI or your bank transfer.</p>
-                    <div class="mt-5">
-                        <a href="https://play.google.com/store/apps/details?id=com.calance.moneyquiz"
+                        <div class="mt-5">
+                            <a href="https://play.google.com/store/apps/details?id=com.calance.moneyquiz"
                             class="btn f-18 text-poppins fw-bold get-btn">Get Started</a>
+                        </div>
                     </div>
-                </div>
-                <div class="col-sm-6 col-md-6 col-12 py-5 m-auto">
-                    <div class="text-center">
-                        <img src="assets/pay-pic.svg" alt="" width="200">
+                    <div class="col-sm-6 col-md-6 col-12 py-5 m-auto">
+                        <div class="text-center">
+                            <img src="assets/pay-pic.svg" alt="" width="200">
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <!-- section 5 about us section-->
-    <div id="abtus" class="section5 text-poppins pt-5">
-        <h1 class="text-center text-uppercase text-orange pt-5 f-32">about us</h1>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-sm-6 col-md-7 col-12 m-auto p-5">
-                    <div class="padding-left">
-                        <p class="text-pink f-32">Welcome to <span class="text-orange">IZIDO</span></p>
-                        <p class="text-light-brown f-18 mt-5">Our platform offers a unique opportunity to watch
+        <!-- section 5 about us section-->
+        <div id="abtus" class="section5 text-poppins pt-5">
+            <h1 class="text-center text-uppercase text-orange pt-5 f-32">about us</h1>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-6 col-md-7 col-12 m-auto p-5">
+                        <div class="padding-left">
+                            <p class="text-pink f-32">Welcome to <span class="text-orange">IZIDO</span></p>
+                            <p class="text-light-brown f-18 mt-5">Our platform offers a unique opportunity to watch
                             captivating
                             ads and answer questions related to the content. By providing accurate responses, you unlock
                             instant cash rewards that you can cash out at any time. It's a win-win situation.</p>
-                        <p class="text-light-brown f-18 mt-5">Join IZIDO today and experience a new way to engage with
+                            <p class="text-light-brown f-18 mt-5">Join IZIDO today and experience a new way to engage with
                             ads.
                             Start earning real cash rewards for your participation and make the most of your online
                             experience.</p>
 
-                        <!-- <button class="learn-more mt-5">
+                            <h1 class="text-uppercase text-orange pt-5 f-32">Key Features</h1>
+                            <p class="text-light-brown f-18 mt-5">Engaging Quizzes: Participate in live quizzes covering various topics and challenge yourself against other players.
+                              Earn Money with Knowledge: Use your knowledge to earn money by answering quiz questions correctly and watching ads.</p>
+                            <p class="text-light-brown f-18 mt-5">Real-Time Prizes: Win cash prizes that grow with each correct answer, providing a thrilling and rewarding experience.
+                              Start Winning Now!</p>
+                            <!-- <button class="learn-more mt-5">
                             <span class="circle" aria-hidden="true">
                                 <span class="icon arrow"></span>
                             </span>
                             <span class="button-text"> <a href="https://ad.izido.io/">Advertise With Us</a></span>
                         </button> -->
+                        </div>
                     </div>
-                </div>
-                <div class="col-sm-6 col-md-5 col-12 text-end m-auto">
-                    <div class="img-card">
-                        <img src="assets/about-us.png" alt="" width="400">
+                    <div class="col-sm-6 col-md-5 col-12 text-end m-auto">
+                        <div class="img-card">
+                            <img src="assets/about-us.png" alt="" width="400">
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <!-- section 6 so why izido-->
-    <div class="section6 pt-5">
-        <h1 class="text-center text-uppercase text-orange pt-5 f-32">so why izido</h1>
-        <div class="container-fluid my-5">
-            <div class="row py-5">
-                <div class="col-sm-4 col-md-4 col-12 p-5">
-                    <div class="text-center">
-                        <img src="assets/ad1.svg" alt="">
-                        <h1 class="text-capitalize text-light-brown f-28 pt-5">Interactive Ads</h1>
-                        <p class="text-grey f-14 pt-2">
+        <!-- section 6 so why izido-->
+        <div class="section6 pt-5">
+            <h1 class="text-center text-uppercase text-orange pt-5 f-32">so why izido</h1>
+            <div class="container-fluid my-5">
+                <div class="row py-5">
+                    <div class="col-sm-4 col-md-4 col-12 p-5">
+                        <div class="text-center">
+                            <img src="assets/ad1.svg" alt="">
+                            <h1 class="text-capitalize text-light-brown f-28 pt-5">Interactive Ads</h1>
+                            <p class="text-grey f-14 pt-2">
                             Watch engaging advertisements and participate in interactive quizzes.
                         </p>
+                        </div>
                     </div>
-                </div>
-                <div class="col-sm-4 col-md-4 col-12 p-5">
-                    <div class="text-center">
-                        <img src="assets/coinbox.svg" alt="">
-                        <h1 class="text-capitalize text-light-brown f-28 pt-5">win cash rewards</h1>
-                        <p class="text-grey f-14 pt-2">
+                    <div class="col-sm-4 col-md-4 col-12 p-5">
+                        <div class="text-center">
+                            <img src="assets/coinbox.svg" alt="">
+                            <h1 class="text-capitalize text-light-brown f-28 pt-5">win cash rewards</h1>
+                            <p class="text-grey f-14 pt-2">
                             Answer questions correctly and earn real money instantly.
                         </p>
+                        </div>
                     </div>
-                </div>
-                <div class="col-sm-4 col-md-4 col-12 p-5">
-                    <div class="text-center">
-                        <img src="assets/wallet.svg" alt="">
-                        <h1 class="text-capitalize text-light-brown f-28 pt-5">Flexible Cashouts</h1>
-                        <p class="text-grey f-14 pt-2">
+                    <div class="col-sm-4 col-md-4 col-12 p-5">
+                        <div class="text-center">
+                            <img src="assets/wallet.svg" alt="">
+                            <h1 class="text-capitalize text-light-brown f-28 pt-5">Flexible Cashouts</h1>
+                            <p class="text-grey f-14 pt-2">
                             Cash out your earnings at any time with convenient payout options.
                         </p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <!-- section7 how to worl-->
-    <div id="howplay" class="section7 section-icon pt-5">
-        <h1 class="text-center text-uppercase text-orange pt-5 f-32">how to work</h1>
-        <div class="container-fluid my-5">
-            <div class="row py-5">
-                <div class="col-md-4 p-5">
-                    <div class="text-center">
-                        <div class="icon-box text-center m-auto">
-                            <i class="fa fa-user f-62" aria-hidden="true"></i>
-                        </div>
-                        <h1 class="text-capitalize text-light-brown f-28 pt-5">Step 1</h1>
-                        <p class="text-grey f-14 pt-2">
+        <div class="section how-it-works pt-5">
+            <h1 class="text-center text-uppercase text-orange pt-5 f-32">how it works</h1>
+            <p class="text-light-brown f-18 mt-5">
+                <span class="f-500">Joining a Quiz: </span>Don't miss your chance to join a quiz! Pay an entry fee or earn it by watching ads. Each ad viewed earns you money, which can be used as an entry fee.
+            </p>
+            <p class="text-light-brown f-18 mt-5">
+                <span class="f-500">Quiz Format: </span>
+ 
+The quiz consists of 10 questions, with increasing difficulty levels. Answer each question correctly to progress and win bigger prizes.
+            </p>
+            <p class="text-light-brown f-18 mt-5">
+                <span class="f-500">Prize Pool Calculation: </span>
+ 
+Imagine winning a share of the total prize pool, which is calculated based on the number of participants and the entry fee. For example, with 20,000 participants and a 100 rupees entry fee, the total pool is 20,00,000 rupees.
+            </p>
+            <p class="text-light-brown f-18 mt-5">
+                <span class="f-500"> Question Progression: </span>
+ 
+After each question, participants who answer incorrectly are eliminated. The prize pool is then divided among the remaining participants who answered correctly.
+
+            </p>
+            <p class="text-light-brown f-18 mt-5">
+                <span class="f-500">Prize Distribution: </span>
+                Picture yourself among the winners! If after the first question, 5,000 participants answer correctly, each receives 400 rupees from the pool prize (20,00,000 rupees divided by 5,000 participants).
+            </p>
+            <p class="text-light-brown f-18 mt-5">
+                <span class="f-500">Continued Participation: </span>
+                Keep the excitement going! You can choose to cash out your winnings after each question or continue to the next question to win more. The value of the prize pool increases with each correct answer.
+            </p>
+            <p class="text-light-brown f-18 mt-5">
+                <span class="f-500">Final Prize: </span>
+                Aim for the grand prize! The remaining prize pool is distributed among participants who answer all questions correctly, providing an additional incentive for players to stay engaged and answer all questions.
+            </p>
+            <p class="text-light-brown f-18 mt-5">
+                <span class="f-500">Ads Section: </span>
+                Earn Money with Ads:
+                Watch ads to earn money, with the amount varying based on the advertiser and the amount they are willing to spend per ad. Use your earnings for quiz entry fees or purchases.
+            </p>
+            <p class="text-light-brown f-18 mt-5">
+                <span class="f-500">Advertiser Benefits: </span>
+                Advertisers benefit from direct money transfer to users, ensuring high engagement and brand visibility.
+            </p>
+            <p class="text-light-brown f-18 mt-5">
+                <span class="f-500">UPI Transactions: </span>
+                Convenient UPI Transactions:
+                Enjoy hassle-free transactions with UPI. Deposit your entry fee or withdraw your winnings easily and securely using UPI.
+            </p>
+            <p class="text-light-brown f-18 mt-5">
+                <span class="f-500">Secure Transactions: </span>
+                Rest assured that your transactions are safe and secure with our UPI integration. Play with peace of mind knowing that your money is in good hands.
+            </p>
+
+        </div>
+        <!-- section7 how to worl-->
+        <div id="howplay" class="section7 section-icon pt-5">
+            <h1 class="text-center text-uppercase text-orange pt-5 f-32">how to work</h1>
+            <div class="container-fluid my-5">
+                <div class="row py-5">
+                    <div class="col-md-4 p-5">
+                        <div class="text-center">
+                            <div class="icon-box text-center m-auto">
+                                <i class="fa fa-user f-62" aria-hidden="true"></i>
+                            </div>
+                            <h1 class="text-capitalize text-light-brown f-28 pt-5">Step 1</h1>
+                            <p class="text-grey f-14 pt-2">
                             Create your free Izido Advertisement account to start earning.
                         </p>
-                    </div>
-                </div>
-                <div class="col-md-4 p-5">
-                    <div class="text-center">
-                        <div class="icon-box text-center m-auto">
-                            <i class="fa-solid fa-rectangle-ad f-62"></i>
                         </div>
-                        <h1 class="text-capitalize text-light-brown f-28 pt-5">Step 2</h1>
-                        <p class="text-grey f-14 pt-2">
+                    </div>
+                    <div class="col-md-4 p-5">
+                        <div class="text-center">
+                            <div class="icon-box text-center m-auto">
+                                <i class="fa-solid fa-rectangle-ad f-62"></i>
+                            </div>
+                            <h1 class="text-capitalize text-light-brown f-28 pt-5">Step 2</h1>
+                            <p class="text-grey f-14 pt-2">
                             Watch ads attentively and absorb the content.
                         </p>
-                    </div>
-                </div>
-                <div class="col-md-4 p-5">
-                    <div class="text-center">
-                        <div class="icon-box text-center m-auto">
-                            <i class="fa fa-question f-62" aria-hidden="true"></i>
                         </div>
-                        <h1 class="text-capitalize text-light-brown f-28 pt-5">Step 3</h1>
-                        <p class="text-grey f-14 pt-2">
+                    </div>
+                    <div class="col-md-4 p-5">
+                        <div class="text-center">
+                            <div class="icon-box text-center m-auto">
+                                <i class="fa fa-question f-62" aria-hidden="true"></i>
+                            </div>
+                            <h1 class="text-capitalize text-light-brown f-28 pt-5">Step 3</h1>
+                            <p class="text-grey f-14 pt-2">
                             Answer a question related to the ad accurately and win cash rewards instantly.
                         </p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <!-- section 8 advetise with us-->
-    <div class="section8 text-poppins position-relative">
-        <div class="text-box m-auto">
-            <div class="text-center m-auto">
-                <hr>
-                <div class="text-center text-uppercase text-orange f-32">Advertise with Us</div>
-                <hr>
-            </div>
-            <div class="container m-auto pt-5">
-                <div class="row pt-5">
-                    <div class="col-sm-12 col-md-4 col-12">
-                        <div class="section8-bg p-5 m-4 text-center">
-                            <img src="assets/speaker.svg" alt="">
-                            <p class="text-dark-brown f-20 fw-bold text-uppercase pt-5">Promote Your Brand</p>
-                            <p class="f-12 text-brown pt-2">Connect with an engaged
+        <!-- section 8 advetise with us-->
+        <div class="section8 text-poppins position-relative">
+            <div class="text-box m-auto">
+                <div class="text-center m-auto">
+                    <hr>
+                    <div class="text-center text-uppercase text-orange f-32">Advertise with Us</div>
+                    <hr>
+                </div>
+                <div class="container m-auto pt-5">
+                    <div class="row pt-5">
+                        <div class="col-sm-12 col-md-4 col-12">
+                            <div class="section8-bg p-5 m-4 text-center">
+                                <img src="assets/speaker.svg" alt="">
+                                <p class="text-dark-brown f-20 fw-bold text-uppercase pt-5">Promote Your Brand</p>
+                                <p class="f-12 text-brown pt-2">Connect with an engaged
                                 audience through interactive ads</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="section8-bg p-5 m-4 text-center">
-                            <img src="assets/Track.svg" alt="">
-                            <p class="text-dark-brown f-20 fw-bold text-uppercase pt-5">Track Performance</p>
-                            <p class="f-12 text-brown pt-2">Measure the effectiveness of your
+                        <div class="col-md-4">
+                            <div class="section8-bg p-5 m-4 text-center">
+                                <img src="assets/Track.svg" alt="">
+                                <p class="text-dark-brown f-20 fw-bold text-uppercase pt-5">Track Performance</p>
+                                <p class="f-12 text-brown pt-2">Measure the effectiveness of your
                                 campaigns and optimize results.
                                 Try Now</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="section8-bg p-5 m-4 text-center">
-                            <img src="assets/hive-five.svg" alt="">
-                            <p class="text-dark-brown f-20 fw-bold text-uppercase pt-5">Drive Engagement</p>
-                            <p class="f-12 text-brown pt-2">Encourage users to interact with
+                        <div class="col-md-4">
+                            <div class="section8-bg p-5 m-4 text-center">
+                                <img src="assets/hive-five.svg" alt="">
+                                <p class="text-dark-brown f-20 fw-bold text-uppercase pt-5">Drive Engagement</p>
+                                <p class="f-12 text-brown pt-2">Encourage users to interact with
                                 your brand message and increase
                                 brand awareness</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="text-center my-5 text-capitalize">
-                <a href="/ad.html" class="btn f-14 download-btn px-5">
+                <div class="text-center my-5 text-capitalize">
+                    <a href="/ad.html" class="btn f-14 download-btn px-5">
                     advertise with us
                 </a>
+                </div>
             </div>
+            <img src="assets/shape-16.svg" alt="" class="shape1" width="20%">
+            <img src="assets/shape-16.svg" alt="" class="shape2" width="20%">
         </div>
-        <img src="assets/shape-16.svg" alt="" class="shape1" width="20%">
-        <img src="assets/shape-16.svg" alt="" class="shape2" width="20%">
-    </div>
 
-    <!-- section 9 faq-->
-    <div id="faq" class="section9 pd-top">
-        <h1 class="text-center f-34 text-orange">Frequently asked questions</h1>
-        <div class="accordion m-5" id="accordionPanelsStayOpenExample">
-            <!-- accordion 1 -->
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="panelsStayOpen-headingOne">
-                    <button class="accordion-button f-20 text-dark-brown f-500" type="button" data-bs-toggle="collapse"
+        <!-- section 9 faq-->
+        <div id="faq" class="section9 pd-top">
+            <h1 class="text-center f-34 text-orange">Frequently asked questions</h1>
+            <div class="accordion m-5" id="accordionPanelsStayOpenExample">
+                <!-- accordion 1 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                        <button class="accordion-button f-20 text-dark-brown f-500" type="button" data-bs-toggle="collapse"
                         data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
                         aria-controls="panelsStayOpen-collapseOne">
                         How does IZIDO work?
                     </button>
-                </h2>
-                <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
+                    </h2>
+                    <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
                     aria-labelledby="panelsStayOpen-headingOne">
-                    <div class="accordion-body f-14">
+                        <div class="accordion-body f-14">
                         IZIDO presents ads to users, followed by a question related to the ad. Users who answer the
                         question correctly are rewarded with instant cash prizes.
                     </div>
+                    </div>
                 </div>
-            </div>
-            <!-- accordion 2 -->
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
-                    <button class="accordion-button collapsed f-20 text-dark-brown f-500" type="button"
+                <!-- accordion 2 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                        <button class="accordion-button collapsed f-20 text-dark-brown f-500" type="button"
                         data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
                         aria-controls="panelsStayOpen-collapseTwo">
                         How can I cash out my earnings from IZIDO?
                     </button>
-                </h2>
-                <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse"
+                    </h2>
+                    <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse"
                     aria-labelledby="panelsStayOpen-headingTwo">
-                    <div class="accordion-body f-14">
+                        <div class="accordion-body f-14">
                         IZIDO offers multiple withdrawal options, including bank accounts and UPI (Unified Payments
                         Interface).
                         You can choose the UPI option to cash out your earnings directly to your bank account.
                     </div>
+                    </div>
                 </div>
-            </div>
-            <!-- accordion 3 -->
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="panelsStayOpen-headingThree">
-                    <button class="accordion-button collapsed f-20 text-dark-brown f-500" type="button"
+                <!-- accordion 3 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                        <button class="accordion-button collapsed f-20 text-dark-brown f-500" type="button"
                         data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
                         aria-controls="panelsStayOpen-collapseThree">
                         Can advertisers set the price for each correct answer?
                     </button>
-                </h2>
-                <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse"
+                    </h2>
+                    <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse"
                     aria-labelledby="panelsStayOpen-headingThree">
-                    <div class="accordion-body f-14">
+                        <div class="accordion-body f-14">
                         Yes, advertisers have the flexibility to set the price per correct answer for their ad campaigns
                         on IZIDO. This allows them to customize their reward structure and align it with their marketing
                         goals.
                     </div>
+                    </div>
                 </div>
-            </div>
-            <!-- accordion 4 -->
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="panelsStayOpen-headingFour">
-                    <button class="accordion-button collapsed f-20 text-dark-brown f-500" type="button"
+                <!-- accordion 4 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="panelsStayOpen-headingFour">
+                        <button class="accordion-button collapsed f-20 text-dark-brown f-500" type="button"
                         data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false"
                         aria-controls="panelsStayOpen-collapseFour">
                         Can I change my withdrawal method?
                     </button>
-                </h2>
-                <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse"
+                    </h2>
+                    <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse"
                     aria-labelledby="panelsStayOpen-headingFour">
-                    <div class="accordion-body f-14">
+                        <div class="accordion-body f-14">
                         Yes, you can usually change your withdrawal method within the IZIDO app or website. Please refer
                         to the platform's settings or support section for instructions on updating your withdrawal
                         preferences.
                     </div>
+                    </div>
                 </div>
-            </div>
-            <!-- accordion 5 -->
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="panelsStayOpen-headingFive">
-                    <button class="accordion-button collapsed f-20 text-dark-brown f-500" type="button"
+                <!-- accordion 5 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="panelsStayOpen-headingFive">
+                        <button class="accordion-button collapsed f-20 text-dark-brown f-500" type="button"
                         data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false"
                         aria-controls="panelsStayOpen-collapseFive">
                         What happens if I provide an incorrect answer to the advertiser's question?
                     </button>
-                </h2>
-                <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse"
+                    </h2>
+                    <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse"
                     aria-labelledby="panelsStayOpen-headingFive">
-                    <div class="accordion-body f-14">
+                        <div class="accordion-body f-14">
                         If you provide an incorrect answer, you may not receive the cash reward for that particular
                         question. However, you can continue watching ads and answering questions for other opportunities
                         to win cash rewards.
                     </div>
+                    </div>
                 </div>
-            </div>
-            <!-- accordion 6 -->
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="panelsStayOpen-headingSix">
-                    <button class="accordion-button collapsed f-20 text-dark-brown f-500" type="button"
+                <!-- accordion 6 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="panelsStayOpen-headingSix">
+                        <button class="accordion-button collapsed f-20 text-dark-brown f-500" type="button"
                         data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseSix" aria-expanded="false"
                         aria-controls="panelsStayOpen-collapseSix">
                         Is IZIDO available on both Android and iOS devices?
                     </button>
-                </h2>
-                <div id="panelsStayOpen-collapseSix" class="accordion-collapse collapse"
+                    </h2>
+                    <div id="panelsStayOpen-collapseSix" class="accordion-collapse collapse"
                     aria-labelledby="panelsStayOpen-headingSix">
-                    <div class="accordion-body f-14">
-                        <!-- Yes, IZIDO is available for both Android and iOS devices. You can download the app from the
+                        <div class="accordion-body f-14">
+                            <!-- Yes, IZIDO is available for both Android and iOS devices. You can download the app from the
                         respective app stores and start earning cash rewards. -->
                         As of now IZIDO is available only for Android. You can download the app from the
                         play store and start earning cash rewards.
                     </div>
+                    </div>
                 </div>
-            </div>
-            <!-- accordion 7 -->
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="panelsStayOpen-headingSeven">
-                    <button class="accordion-button collapsed f-20 text-dark-brown f-500" type="button"
+                <!-- accordion 7 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="panelsStayOpen-headingSeven">
+                        <button class="accordion-button collapsed f-20 text-dark-brown f-500" type="button"
                         data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseSeven" aria-expanded="false"
                         aria-controls="panelsStayOpen-collapseSeven">
                         How does the cash reward system work?
                     </button>
-                </h2>
-                <div id="panelsStayOpen-collapseSeven" class="accordion-collapse collapse"
+                    </h2>
+                    <div id="panelsStayOpen-collapseSeven" class="accordion-collapse collapse"
                     aria-labelledby="panelsStayOpen-headingSeven">
-                    <div class="accordion-body f-14">
+                        <div class="accordion-body f-14">
                         After watching an ad on IZIDO, you will be presented with a question related to the ad. If you
                         answer the question correctly, you will be rewarded with the specified amount set by the
                         advertiser.
                     </div>
+                    </div>
                 </div>
-            </div>
-            <!-- accordion 8 -->
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="panelsStayOpen-headingEight">
-                    <button class="accordion-button collapsed f-20 text-dark-brown f-500" type="button"
+                <!-- accordion 8 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="panelsStayOpen-headingEight">
+                        <button class="accordion-button collapsed f-20 text-dark-brown f-500" type="button"
                         data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseEight" aria-expanded="false"
                         aria-controls="panelsStayOpen-collapseEight">
                         Are there any limits on cash withdrawals?
                     </button>
-                </h2>
-                <div id="panelsStayOpen-collapseEight" class="accordion-collapse collapse"
+                    </h2>
+                    <div id="panelsStayOpen-collapseEight" class="accordion-collapse collapse"
                     aria-labelledby="panelsStayOpen-headingEight">
-                    <div class="accordion-body f-14">
+                        <div class="accordion-body f-14">
                         IZIDO may have certain withdrawal limits in place to ensure smooth processing of cash rewards.
                         Please check the app or website for details regarding withdrawal limits.
                     </div>
+                    </div>
                 </div>
-            </div>
-            <!-- accordion 9 -->
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="panelsStayOpen-headingNine">
-                    <button class="accordion-button collapsed f-20 text-dark-brown f-500" type="button"
+                <!-- accordion 9 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="panelsStayOpen-headingNine">
+                        <button class="accordion-button collapsed f-20 text-dark-brown f-500" type="button"
                         data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseNine" aria-expanded="false"
                         aria-controls="panelsStayOpen-collapseNine">
                         Is there a minimum balance required to cash out?
                     </button>
-                </h2>
-                <div id="panelsStayOpen-collapseNine" class="accordion-collapse collapse"
+                    </h2>
+                    <div id="panelsStayOpen-collapseNine" class="accordion-collapse collapse"
                     aria-labelledby="panelsStayOpen-headingNine">
-                    <div class="accordion-body f-14">
+                        <div class="accordion-body f-14">
                         IZIDO may have a minimum balance requirement for cashing out your earnings. This is typically
                         set to ensure that users accumulate a certain amount before requesting a withdrawal.
                     </div>
+                    </div>
                 </div>
-            </div>
-            <!-- accordion 10 -->
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="panelsStayOpen-headingTen">
-                    <button class="accordion-button collapsed f-20 text-dark-brown f-500" type="button"
+                <!-- accordion 10 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="panelsStayOpen-headingTen">
+                        <button class="accordion-button collapsed f-20 text-dark-brown f-500" type="button"
                         data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTen" aria-expanded="false"
                         aria-controls="panelsStayOpen-collapseTen">
                         How long does it take to receive the cash after requesting a withdrawal?
                     </button>
-                </h2>
-                <div id="panelsStayOpen-collapseTen" class="accordion-collapse collapse"
+                    </h2>
+                    <div id="panelsStayOpen-collapseTen" class="accordion-collapse collapse"
                     aria-labelledby="panelsStayOpen-headingTen">
-                    <div class="accordion-body f-14">
+                        <div class="accordion-body f-14">
                         IZIDO strives to process cash withdrawals as quickly as possible. The exact processing time may
                         vary depending on various factors, including the withdrawal method chosen and any applicable
                         verification processes.
                     </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <!-- section10 contact us-->
-    <!-- <div id="contact" class="section10 py-5 position-relative">
+        <!-- section10 contact us-->
+        <!-- <div id="contact" class="section10 py-5 position-relative">
         <h1 class="my-5 text-orange f-32 text-center contact-header">CONTACT US</h1>
         <div class="container-fluid">
             <div class="row">
@@ -568,41 +625,42 @@
             </div>
         </div>
     </div> -->
-    <!-- main section end -->
+        <!-- main section end -->
 
-    <!-- footer section -->
-    <footer>
-        <div class="bg-orange py-5">
-            <div class="bg-white p-5 border-rad-50">
-                <div class="container-fliud bg-white">
-                    <div class="row">
-                        <div class="col-md-6 m-auto">
-                            <div class="text-center">
-                                <img src="assets/logo.png" alt="">
+        <!-- footer section -->
+        <footer>
+            <div class="bg-orange py-5">
+                <div class="bg-white p-5 border-rad-50">
+                    <div class="container-fliud bg-white">
+                        <div class="row">
+                            <div class="col-md-6 m-auto">
+                                <div class="text-center">
+                                    <img src="assets/logo.png" alt="">
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-md-6 text-poppins">
-                            <div class="row">
-                                <div class="col-md-3">
-                                    <p class="text-orange f-14 text-capitalize">useful links</p>
-                                    <div class="">
-                                        <div>
-                                            <a href="#" class="pt-1 f-12">Home</a>
-                                        </div>
-                                        <div>
-                                            <a href="#abtus" class="pt-1 f-12">About us</a>
-                                        </div>
-                                        <div>
-                                            <a href="#howplay" class="pt-1 f-12">How to Work</a>
-                                        </div>
-                                        <div>
-                                            <a href="#faq" class="pt-1 f-12">FAQ's</a>
-                                        </div>
-                                        <div>
-                                            <a href="contactUs.html" class="pt-1 f-12">Contact us</a>
-                                        </div>
-                                        <div>
-                                            <a href="t&c.html" id="" class="pt-1 f-12">Terms & Conditions</a> </li>
+                            <div class="col-md-6 text-poppins">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <p class="text-orange f-14 text-capitalize">useful links</p>
+                                        <div class="">
+                                            <div>
+                                                <a href="#" class="pt-1 f-12">Home</a>
+                                            </div>
+                                            <div>
+                                                <a href="#abtus" class="pt-1 f-12">About us</a>
+                                            </div>
+                                            <div>
+                                                <a href="#howplay" class="pt-1 f-12">How to Work</a>
+                                            </div>
+                                            <div>
+                                                <a href="#faq" class="pt-1 f-12">FAQ's</a>
+                                            </div>
+                                            <div>
+                                                <a href="contactUs.html" class="pt-1 f-12">Contact us</a>
+                                            </div>
+                                            <div>
+                                                <a href="t&c.html" id="" class="pt-1 f-12">Terms & Conditions</a>
+                                            </li>
                                         </div>
                                     </div>
                                 </div>
@@ -649,7 +707,9 @@
                         <div class="navFooterLine navFooterLinkLine navFooterPadItemLine navFooterCopyright">
                             <ul class="f-500">
                                 <!-- <li class="nav_first"><a href="/gp/help/customer/display.html?nodeId=200545940&amp;ref_=footer_cou" id="" class="nav_a">Conditions of Use &amp; Sale</a> </li> -->
-                                <li><a href="privacy.html" id="" class="nav_a">Privacy Notice </a> </li> &nbsp;
+                                <li>
+                                    <a href="privacy.html" id="" class="nav_a">Privacy Notice </a>
+                                </li> &nbsp;
                                 <span> &#169; 2023, Bord Media Pvt. Ltd. or its affiliates Ltd.</span>
                             </ul>
                         </div>
@@ -664,9 +724,13 @@
         window.addEventListener('scroll', function () {
             let navbar = document.querySelector('nav');
             if (window.pageYOffset > 0) {
-                navbar.classList.add('sticky');
+                navbar
+                    .classList
+                    .add('sticky');
             } else {
-                navbar.classList.remove('sticky');
+                navbar
+                    .classList
+                    .remove('sticky');
             }
         });
     </script>
