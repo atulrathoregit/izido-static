@@ -501,6 +501,34 @@ nav.sticky {
   padding: 0 100px;
 }
 
+.section-how .container {
+  background-color: var(--orange-color);
+  display: flex;
+  height: 300px;
+}
+.section-how .text-column {
+  flex: 1;
+  padding: 20px;
+  color: white;
+  font-size: 28px;
+  line-height: normal;
+}
+.section-how .image-column {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section-how .image-column img {
+  margin: 10px;
+  height: 290px;
+  width: auto;
+}
+
+.mt-5{
+  margin-top:5px
+}
+
 /* media query */
 @media (max-width: 991.98px){
     .section5 img{
