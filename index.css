@@ -169,6 +169,67 @@ a {
   font-weight: 500;
 }
 
+.fs-24{
+  font-size: 24px;
+}
+
+.lh-14{
+  line-height: 1.4em;
+}
+
+.fs-14{
+  font-size: 14px;
+}
+
+.lh-17{
+  line-height: 1.75em;
+}
+
+i {
+  font-size: 14px;
+  color:orange
+}
+
+.feat-img{
+  width: 40px;
+}
+
+.advertise-with-us{
+  margin-top:20px;
+  margin-bottom:30px;
+}
+
+.advertise-with-us h1{
+  margin-bottom:60px
+}
+
+.section2{
+  padding:0px 30px;
+}
+
+.transaction-ways{
+  background-color: white;
+}
+.transaction-ways img{
+  width:10%;
+  margin:0 96px;
+}
+
+.upi-transactions{
+  background:#f87829
+}
+
+.upi-transactions .first-section{
+  padding:50px 0px
+}
+
+.first-section h1{
+  margin-bottom: 20px;
+}
+
+.upi-text{
+  margin-left:100px
+}
 
 .get-btn,
 .download-btn {
@@ -258,7 +319,8 @@ a {
 }
 
 nav.sticky {
-  background: var(--bg-light-blue);
+  /* background: var(--bg-light-blue); */
+  background: lightgrey;
 }
 
 @media (max-width:768px){
