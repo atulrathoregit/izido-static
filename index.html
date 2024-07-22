@@ -18,6 +18,31 @@
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
         crossorigin="anonymous"></script>
 
+        <script>
+            // Function to detect iOS devices
+            function isIOS() {
+                return /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+            }
+
+            // Function to dynamically set the href attribute based on device
+            function setDynamicLinks() {
+                var links = document.querySelectorAll('.app-link');
+
+                links.forEach(function (link) {
+                    if (isIOS()) {
+                        // iOS link
+                        link.href = "https://apps.apple.com/app/izido/id6503604529";
+                    } else {
+                        // Android link
+                        link.href = "https://play.google.com/store/apps/details?id=com.calance.moneyquiz";
+                    }
+                });
+            }
+
+            // Call the function when the page loads
+            window.onload = setDynamicLinks;
+        </script>
+
     </head>
 
     <body>
@@ -55,8 +80,7 @@
                             </li>
                         </ul>
                         <div>
-                            <a href="https://play.google.com/store/apps/details?id=com.calance.moneyquiz"
-                            class="btn f-18 text-poppins fw-bold download-btn">Download App</a>
+                            <a class="btn f-18 text-poppins fw-bold download-btn app-link">Download App</a>
                         </div>
                     </div>
                 </div>
@@ -75,8 +99,7 @@
                         <p class="text-orange f-28 mt-1 f-500">Where Knowledge Wins Rewards!</p>
                         <p class="text-light-brown f-18 mt-5 f-500">Join the excitement and thrill of Izido Quiz, where your knowledge can earn you real money in real-time! Challenge yourself, compete with others, and win big prizes—test your skills and see how much you can win today!</p>
                         <div class="mt-5 mb-15">
-                            <a href="https://play.google.com/store/apps/details?id=com.calance.moneyquiz"
-                            class="btn f-18 text-poppins fw-bold get-btn">Get Started</a>
+                            <a class="btn f-18 text-poppins fw-bold get-btn app-link">Get Started</a>
                         </div>
                     </div>
                     <div class="col-sm-6 col-md-6 col-lg-5 col-xl-5 col-12 order-sm-last order-first">
@@ -441,7 +464,8 @@
                 <div class="row">
                     <div class="col-sm-6 col-md-6 col-12 py-5 m-auto">
                         <p class="text-light-brown f-28 mt-5">Top-Up Your Wallet:</p>
-                        <p class="text-med-brown f-20 mt-5">Add funds to your wallet to pay for quiz entry fees or other transactions.* <br> <i>* Please note that the final amount in your wallet may be less than the amount you top up, as it is subject to government-mandated taxes/duties and a 3% handling fee.</i>
+                        <p class="text-med-brown f-20 mt-5">Add funds to your wallet to pay for quiz entry fees or other transactions.* <br>
+                            <i>* Please note that the final amount in your wallet may be less than the amount you top up, as it is subject to government-mandated taxes/duties and a 3% handling fee.</i>
                         </p>
                     </div>
                     <div class="col-sm-6 col-md-6 col-12 py-5 m-auto">
@@ -461,7 +485,8 @@
                     </div>
                     <div class="col-sm-6 col-md-6 col-12 py-5 m-auto">
                         <p class="text-light-brown f-28 mt-5">Join a Quiz:</p>
-                        <p class="text-med-brown f-20 mt-5">Participate in live quizzes with 10 rounds of questions. Pay an entry fee or earn it by watching ads.*  <br> <i>*coming soon</i>
+                        <p class="text-med-brown f-20 mt-5">Participate in live quizzes with 10 rounds of questions. Pay an entry fee or earn it by watching ads.*  <br>
+                            <i>*coming soon</i>
                         </p>
                     </div>
                 </div>
@@ -528,7 +553,9 @@
 
         <div class="advertise-with-us">
             <div class="container">
-                <h1 class="text-center text-orange pt-5 f-32">ADVERTISE WITH US * <br><i>*coming soon</i></h1>
+                <h1 class="text-center text-orange pt-5 f-32">ADVERTISE WITH US * <br>
+                    <i>*coming soon</i>
+                </h1>
                 <div class="row align-items-center justify-content-center justify-content-lg-between">
                     <div class="col-sm-12 col-md-12 col-lg-6 col-12">
                         <div>
@@ -549,23 +576,50 @@
             </div>
         </div>
 
-        <div class="upi-transactions">
-            <div class="first-section">
-               <h1 class="text-center text-white f-32">UPI TRANSACTIONS* <br><i>*Coming Soon</i></h1>
-               <div class="upi-text text-white">
-                  <h4>Enjoy hassle-free transactions with UPI. Deposit your entry fee or withdraw your winnings easily and securely using UPI.</h4>
-                  <h4 class="mt-3">Rest assured that your transactions are safe and secure with our UPI integration. Play with peace of mind knowing that your money is in good hands.</h4>
-               </div>
+        <div class="section3 text-poppins">
+            <div class="container-fluid p-5">
+                <div class="row">
+                    <div class="col-sm-12 col-md-6 col-12 p-5 m-auto">
+                        <p class="f-28 text-dark-brown">Download the best advertising platform on</p>
+                        <div class="img-box mt-5">
+                            <!-- <a href="#" class="position-relative">
+                            <img src="assets/comigsoon.png" alt="ios store" width="200" height="70" class="p-1">
+                        </a> -->
+                            <div href="#" class="position-relative">
+                                <img src="assets/comigsoon.png" alt="ios store" width="200" height="70" class="p-1">
+                            </div>
+                            <a href="https://play.google.com/store/apps/details?id=com.calance.moneyquiz">
+                                <img src="assets/playstore.png" alt="play store" width="200" height="70" class="p-1">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-12 p-5 m-auto text-center">
+                        <div class="gif-box">
+                            <img src="assets/play-gif.gif" alt="">
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="transaction-ways">
-                <img src="assets/paytm.jpg"/>
-                <img src="assets/phone-pay.jpg"/>
-                <img src="assets/gpay.png"/>
-                <img src="assets/bank.jpg"/>
-            </div>
-        </div>
 
-        <!--   <div class="section8 text-poppins position-relative">
+            <div class="upi-transactions">
+                <div class="first-section">
+                    <h1 class="text-center text-white f-32">UPI TRANSACTIONS* <br>
+                        <i>*Coming Soon</i>
+                    </h1>
+                    <div class="upi-text text-white">
+                        <h4>Enjoy hassle-free transactions with UPI. Deposit your entry fee or withdraw your winnings easily and securely using UPI.</h4>
+                        <h4 class="mt-3">Rest assured that your transactions are safe and secure with our UPI integration. Play with peace of mind knowing that your money is in good hands.</h4>
+                    </div>
+                </div>
+                <div class="transaction-ways">
+                    <img src="assets/paytm.jpg"/>
+                    <img src="assets/phone-pay.jpg"/>
+                    <img src="assets/gpay.png"/>
+                    <img src="assets/bank.jpg"/>
+                </div>
+            </div>
+
+            <!--   <div class="section8 text-poppins position-relative">
             <div class="text-box m-auto">
                 <div class="text-center m-auto">
                     <hr>
@@ -612,208 +666,208 @@
             <img src="assets/shape-16.svg" alt="" class="shape2" width="20%">
         </div> -->
 
-        <!-- section 9 faq-->
+            <!-- section 9 faq-->
 
-        <div id="faq" class="section9 pd-top">
-            <h1 class="text-center f-34 text-orange">Frequently asked questions</h1>
-            <div class="accordion m-5" id="accordionPanelsStayOpenExample">
-                
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="panelsStayOpen-headingOne">
-                        <button class="accordion-button f-18 text-dark-brown f-500" type="button" data-bs-toggle="collapse"
+            <div id="faq" class="section9 pd-top">
+                <h1 class="text-center f-34 text-orange">Frequently asked questions</h1>
+                <div class="accordion m-5" id="accordionPanelsStayOpenExample">
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                            <button class="accordion-button f-18 text-dark-brown f-500" type="button" data-bs-toggle="collapse"
                         data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
                         aria-controls="panelsStayOpen-collapseOne">
                         What is Izido Quiz?
                     </button>
-                    </h2>
-                    <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
+                        </h2>
+                        <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
                     aria-labelledby="panelsStayOpen-headingOne">
-                        <div class="accordion-body f-14">
+                            <div class="accordion-body f-14">
                         Izido Quiz is an exciting quiz game where you can test your knowledge and win real money. It's a fun and interactive way to challenge yourself and compete with others.
                     </div>
+                        </div>
                     </div>
-                </div>
-               
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
-                        <button class="accordion-button collapsed f-18 text-dark-brown f-500" type="button"
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                            <button class="accordion-button collapsed f-18 text-dark-brown f-500" type="button"
                         data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
                         aria-controls="panelsStayOpen-collapseTwo">
                         How do I play Izido Quiz?
                     </button>
-                    </h2>
-                    <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse"
+                        </h2>
+                        <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse"
                     aria-labelledby="panelsStayOpen-headingTwo">
-                        <div class="accordion-body f-14">
+                            <div class="accordion-body f-14">
                         To play Izido Quiz, you can either pay an entry fee or earn money by watching ads*. Once you're in, answer the quiz questions correctly to win money.
                     </div>
+                        </div>
                     </div>
-                </div>
-                
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="panelsStayOpen-headingThree">
-                        <button class="accordion-button collapsed f-18 text-dark-brown f-500" type="button"
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                            <button class="accordion-button collapsed f-18 text-dark-brown f-500" type="button"
                         data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
                         aria-controls="panelsStayOpen-collapseThree">
                         Is Izido Quiz free to play?
                     </button>
-                    </h2>
-                    <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse"
+                        </h2>
+                        <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse"
                     aria-labelledby="panelsStayOpen-headingThree">
-                        <div class="accordion-body f-14">
+                            <div class="accordion-body f-14">
                         Yes, you can play Izido Quiz for free by earning money through ads. Simply watch ads* to accumulate the entry fee and start playing.
                     </div>
+                        </div>
                     </div>
-                </div>
-               
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="panelsStayOpen-headingFour">
-                        <button class="accordion-button collapsed f-18 text-dark-brown f-500" type="button"
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="panelsStayOpen-headingFour">
+                            <button class="accordion-button collapsed f-18 text-dark-brown f-500" type="button"
                         data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false"
                         aria-controls="panelsStayOpen-collapseFour">
                         Can I play Izido Quiz with friends?
                     </button>
-                    </h2>
-                    <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse"
+                        </h2>
+                        <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse"
                     aria-labelledby="panelsStayOpen-headingFour">
-                        <div class="accordion-body f-14">
+                            <div class="accordion-body f-14">
                         Izido Quiz is designed for individual play, but you can compete against friends to see who can earn more and achieve higher scores.
                     </div>
+                        </div>
                     </div>
-                </div>
-                
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="panelsStayOpen-headingFive">
-                        <button class="accordion-button collapsed f-18 text-dark-brown f-500" type="button"
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="panelsStayOpen-headingFive">
+                            <button class="accordion-button collapsed f-18 text-dark-brown f-500" type="button"
                         data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false"
                         aria-controls="panelsStayOpen-collapseFive">
                         How often are quizzes held?
                     </button>
-                    </h2>
-                    <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse"
+                        </h2>
+                        <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse"
                     aria-labelledby="panelsStayOpen-headingFive">
-                        <div class="accordion-body f-14">
+                            <div class="accordion-body f-14">
                         Quizzes are held everyday, with multiple quizzes scheduled throughout the day. Check the app for the latest schedule and join the fun!
                     </div>
+                        </div>
                     </div>
-                </div>
-               
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="panelsStayOpen-headingSix">
-                        <button class="accordion-button collapsed f-18 text-dark-brown f-500" type="button"
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="panelsStayOpen-headingSix">
+                            <button class="accordion-button collapsed f-18 text-dark-brown f-500" type="button"
                         data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseSix" aria-expanded="false"
                         aria-controls="panelsStayOpen-collapseSix">
                         How is the prize pool calculated?
                     </button>
-                    </h2>
-                    <div id="panelsStayOpen-collapseSix" class="accordion-collapse collapse"
+                        </h2>
+                        <div id="panelsStayOpen-collapseSix" class="accordion-collapse collapse"
                     aria-labelledby="panelsStayOpen-headingSix">
-                        <div class="accordion-body f-14">
+                            <div class="accordion-body f-14">
                            
                         The prize pool is formed by the entry fees of participants and the earnings from watching ads*. It accumulates throughout the quiz and is divided among winners.
                     </div>
+                        </div>
                     </div>
-                </div>
-                
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="panelsStayOpen-headingSeven">
-                        <button class="accordion-button collapsed f-18 text-dark-brown f-500" type="button"
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="panelsStayOpen-headingSeven">
+                            <button class="accordion-button collapsed f-18 text-dark-brown f-500" type="button"
                         data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseSeven" aria-expanded="false"
                         aria-controls="panelsStayOpen-collapseSeven">
                         How are prizes distributed?
                     </button>
-                    </h2>
-                    <div id="panelsStayOpen-collapseSeven" class="accordion-collapse collapse"
+                        </h2>
+                        <div id="panelsStayOpen-collapseSeven" class="accordion-collapse collapse"
                     aria-labelledby="panelsStayOpen-headingSeven">
-                        <div class="accordion-body f-14">
+                            <div class="accordion-body f-14">
                         After each question, the prize pool is divided among the participants who answered correctly. The amount you win depends on the total prize pool and the number of participants left after each round.
                     </div>
+                        </div>
                     </div>
-                </div>
-               
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="panelsStayOpen-headingEight">
-                        <button class="accordion-button collapsed f-18 text-dark-brown f-500" type="button"
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="panelsStayOpen-headingEight">
+                            <button class="accordion-button collapsed f-18 text-dark-brown f-500" type="button"
                         data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseEight" aria-expanded="false"
                         aria-controls="panelsStayOpen-collapseEight">
                         Can I cash out my winnings?
                     </button>
-                    </h2>
-                    <div id="panelsStayOpen-collapseEight" class="accordion-collapse collapse"
+                        </h2>
+                        <div id="panelsStayOpen-collapseEight" class="accordion-collapse collapse"
                     aria-labelledby="panelsStayOpen-headingEight">
-                        <div class="accordion-body f-14">
+                            <div class="accordion-body f-14">
                         Yes, you can cash out your winnings at any time. Simply use the UPI option in the app to withdraw your earnings directly to your bank account.
                     </div>
+                        </div>
                     </div>
-                </div>
-               
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="panelsStayOpen-headingNine">
-                        <button class="accordion-button collapsed f-18 text-dark-brown f-500" type="button"
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="panelsStayOpen-headingNine">
+                            <button class="accordion-button collapsed f-18 text-dark-brown f-500" type="button"
                         data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseNine" aria-expanded="false"
                         aria-controls="panelsStayOpen-collapseNine">
                         How do advertisements work in Izido Quiz?
                     </button>
-                    </h2>
-                    <div id="panelsStayOpen-collapseNine" class="accordion-collapse collapse"
+                        </h2>
+                        <div id="panelsStayOpen-collapseNine" class="accordion-collapse collapse"
                     aria-labelledby="panelsStayOpen-headingNine">
-                        <div class="accordion-body f-14">
+                            <div class="accordion-body f-14">
                         Advertisements in Izido Quiz are integrated into the app. You can earn money by watching ads and answering questions related to the ad content.
                     </div>
+                        </div>
                     </div>
-                </div>
-               
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="panelsStayOpen-headingTen">
-                        <button class="accordion-button collapsed f-18 text-dark-brown f-500" type="button"
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="panelsStayOpen-headingTen">
+                            <button class="accordion-button collapsed f-18 text-dark-brown f-500" type="button"
                         data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTen" aria-expanded="false"
                         aria-controls="panelsStayOpen-collapseTen">
                         What should I do if I encounter a technical issue while playing Izido Quiz?
                     </button>
-                    </h2>
-                    <div id="panelsStayOpen-collapseTen" class="accordion-collapse collapse"
+                        </h2>
+                        <div id="panelsStayOpen-collapseTen" class="accordion-collapse collapse"
                     aria-labelledby="panelsStayOpen-headingTen">
-                        <div class="accordion-body f-14">
+                            <div class="accordion-body f-14">
                         If you experience any technical issues, such as app crashes or connectivity problems, please contact our support team for assistance. We'll do our best to resolve the issue promptly.
                     </div>
+                        </div>
                     </div>
-                </div>
 
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="panelsStayOpen-headingTen">
-                        <button class="accordion-button collapsed f-18 text-dark-brown f-500" type="button"
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="panelsStayOpen-headingTen">
+                            <button class="accordion-button collapsed f-18 text-dark-brown f-500" type="button"
                         data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTen" aria-expanded="false"
                         aria-controls="panelsStayOpen-collapseTen">
                         Is Izido Quiz available on iOS devices?
                     </button>
-                    </h2>
-                    <div id="panelsStayOpen-collapseTen" class="accordion-collapse collapse"
+                        </h2>
+                        <div id="panelsStayOpen-collapseTen" class="accordion-collapse collapse"
                     aria-labelledby="panelsStayOpen-headingTen">
-                        <div class="accordion-body f-14">
+                            <div class="accordion-body f-14">
                         At the moment, Izido Quiz is only available on Android devices. We are working on making it available on iOS in the future.
                     </div>
+                        </div>
                     </div>
-                </div>
 
-                 <div class="accordion-item">
-                    <h2 class="accordion-header" id="panelsStayOpen-headingTen">
-                        <button class="accordion-button collapsed f-18 text-dark-brown f-500" type="button"
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="panelsStayOpen-headingTen">
+                            <button class="accordion-button collapsed f-18 text-dark-brown f-500" type="button"
                         data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTen" aria-expanded="false"
                         aria-controls="panelsStayOpen-collapseTen">
                         How can I provide feedback or suggestions for Izido Quiz?
                     </button>
-                    </h2>
-                    <div id="panelsStayOpen-collapseTen" class="accordion-collapse collapse"
+                        </h2>
+                        <div id="panelsStayOpen-collapseTen" class="accordion-collapse collapse"
                     aria-labelledby="panelsStayOpen-headingTen">
-                        <div class="accordion-body f-14">
+                            <div class="accordion-body f-14">
                         We welcome your feedback and suggestions! Please use the feedback option in the app or contact our support team directly with your ideas.
                     </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div> 
 
-      <!--  <div id="faq" class="section9 pd-top">
+            <!--  <div id="faq" class="section9 pd-top">
             <h1 class="text-center f-34 text-orange">Frequently asked questions</h1>
             <div class="accordion m-5" id="accordionPanelsStayOpenExample">
                 
@@ -996,8 +1050,8 @@
             </div>
         </div> -->
 
-        <!-- section10 contact us-->
-        <!-- <div id="contact" class="section10 py-5 position-relative">
+            <!-- section10 contact us-->
+            <!-- <div id="contact" class="section10 py-5 position-relative">
         <h1 class="my-5 text-orange f-32 text-center contact-header">CONTACT US</h1>
         <div class="container-fluid">
             <div class="row">
@@ -1038,45 +1092,46 @@
             </div>
         </div>
     </div> -->
-        <!-- main section end -->
+            <!-- main section end -->
 
-        <!-- footer section -->
-        <footer>
-            <div class="bg-orange py-5">
-                <div class="bg-white p-5 border-rad-50">
-                    <div class="container-fliud bg-white">
-                        <div class="row">
-                            <div class="col-md-6 m-auto">
-                                <div class="text-center">
-                                    <img src="assets/logo.png" alt="">
+            <!-- footer section -->
+            <footer>
+                <div class="bg-orange py-5">
+                    <div class="bg-white p-5 border-rad-50">
+                        <div class="container-fliud bg-white">
+                            <div class="row">
+                                <div class="col-md-6 m-auto">
+                                    <div class="text-center">
+                                        <img src="assets/logo.png" alt="">
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="col-md-6 text-poppins">
-                                <div class="row">
-                                    <div class="col-md-3">
-                                        <p class="text-orange f-14 text-capitalize">useful links</p>
-                                        <div class="">
-                                            <div>
-                                                <a href="#" class="pt-1 f-12">Home</a>
+                                <div class="col-md-6 text-poppins">
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <p class="text-orange f-14 text-capitalize">useful links</p>
+                                            <div class="">
+                                                <div>
+                                                    <a href="#" class="pt-1 f-12">Home</a>
+                                                </div>
+                                                <div>
+                                                    <a href="#abtus" class="pt-1 f-12">About us</a>
+                                                </div>
+                                                <div>
+                                                    <a href="#howplay" class="pt-1 f-12">How to Work</a>
+                                                </div>
+                                                <div>
+                                                    <a href="#faq" class="pt-1 f-12">FAQ's</a>
+                                                </div>
+                                                <div>
+                                                    <a href="contactUs.html" class="pt-1 f-12">Contact us</a>
+                                                </div>
+                                                <div>
+                                                    <a href="t&c.html" id="" class="pt-1 f-12">Terms & Conditions</a>
+                                                </li>
                                             </div>
                                             <div>
-                                                <a href="#abtus" class="pt-1 f-12">About us</a>
-                                            </div>
-                                            <div>
-                                                <a href="#howplay" class="pt-1 f-12">How to Work</a>
-                                            </div>
-                                            <div>
-                                                <a href="#faq" class="pt-1 f-12">FAQ's</a>
-                                            </div>
-                                            <div>
-                                                <a href="contactUs.html" class="pt-1 f-12">Contact us</a>
-                                            </div>
-                                            <div>
-                                                <a href="t&c.html" id="" class="pt-1 f-12">Terms & Conditions</a>
+                                                <a href="refund.html" id="" class="pt-1 f-12">Refund Policy</a>
                                             </li>
-                                        </div>
-                                         <div>
-                                            <a href="refund.html" id="" class="pt-1 f-12">Refund Policy</a> </li>
                                         </div>
                                     </div>
                                 </div>
