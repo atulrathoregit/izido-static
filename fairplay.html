@@ -1,174 +1,412 @@
 <html>
-    <head>
+  <head>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
 
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
 
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
-        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
 
-        <style>
-            html {
-                scroll-behavior: smooth;
-            }
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
 
-            .tab-pane,
-            section {
-                font-size: 14px;
-                font-weight: 600;
-            }
-            .circular-image {
-                width: 150px;
-                height: 150px;
-                border-radius: 50%;
-                object-fit: cover;
-                display: block;
-                margin: 0 auto;
-            }
+      .tab-pane,
+      section {
+        font-size: 16px;
+        color:#695b39;
+        font-weight:400;
+        line-height: 1.75em;
+      }
 
-            .screenshot {
-                height: 150px;
-            }
+      .tab-pane h4{
+        color:#f87829
+      }
+      .circular-image {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        object-fit: cover;
+        display: block;
+        margin: 0 auto;
+      }
 
-            ul li::marker {
-                color: green;
-            }
+      .screenshot {
+        height: 420px;
+        margin:10px 0px;
+        border: 2px solid #f87829;
+        border-radius: 5px;
+      }
 
-            .img-text {
-                margin-top: 10px;
-                font-weight: 700;
-                color: green;
-                font-size: 15px;
-            }
+      ul li::marker {
+        color: green;
+      }
 
-            .nav-link {
-                font-size: 25px;
-                font-weight: 600;
-            }
-        </style>
+      .img-text {
+        margin-top: 10px;
+        font-weight: 500;
+        font-size: 18px;
+      }
 
-    </head>
-    <body class="container">
-        
-        <div class="mt-2 text-center">
-            <h3>Fairplay Policy</h3>
-            <p>Izido is committed towards building a safe and secure gaming platform that promotes fair play. We have no incentive to create a platform that promotes unfair gameplay and proud to have one of the most secure online gaming platforms in the world. Take a look at how we make this happen below. </p>
-        </div>
+      .section-link {
+        font-size: 20px;
+        color:#695b39
+      }
 
-        <div class="d-flex justify-content-between mt-2">
-            <div>
-                <img src="assets/penalty.jpg" class="circular-image"/>
-                <p class="img-text">Deductions or penalties on winnings</p>
-            </div>
-            <div>
-                <img src="assets/blocking.jpg" class="circular-image"/>
-                <p class="img-text">Blocking of unfairly gained funds </p>
-            </div>
-            <div>
-                <img src="assets/suspend.jfif" class="circular-image"/>
-                <p class="img-text">Suspension of izido account</p>
-            </div>
-            <div>
-                <img src="assets/legal.jfif" class="circular-image"/>
-                <p class="img-text">Legal action under applicable law</p>
-            </div>
-        </div>
+      .fairplay{
+        font-size:18px;
+        padding-top: 100px;
+      }
 
-        <div class="nav-tab-1">
-            <ul class="nav nav-tabs justify-content-center mt-4 mb-4">
-                <li class="nav-item" role="presentation">
-                    <a class="nav-link active" id="transparency-tab" data-bs-toggle="tab" href="#transparency" role="tab" aria-controls="transparency" aria-selected="true">Transparency</a>
-                </li>
-                <li class="nav-item" role="presentation">
-                    <a class="nav-link" id="know-your-opponent-tab" data-bs-toggle="tab" href="#know-your-opponent" role="tab" aria-controls="know-your-opponent" aria-selected="false">Know Your Opponent</a>
-                </li>
-                <li class="nav-item" role="presentation">
-                    <a class="nav-link" id="unfair-gameplay-practices-tab" data-bs-toggle="tab" href="#unfair-gameplay-practices" role="tab" aria-controls="unfair-gameplay-practices" aria-selected="false">Unfair Gameplay Practices</a>
-                </li>
-                <li class="nav-item" role="presentation">
-                    <a class="nav-link" id="securing-the-quiz-tab" data-bs-toggle="tab" href="#securing-the-quiz" role="tab" aria-controls="securing-the-quiz" aria-selected="false">Securing the Quiz</a>
-                </li>
+      .main-fp-content{
+        padding: 40px;
+      }
+
+      .navbar-expand-lg{
+        background-color: #96c1db;
+      }
+
+      .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active{
+        border:1px solid grey;
+        border-bottom:0px;
+        color:#f87829
+      }
+
+      
+    </style>
+  </head>
+  <body>
+    <!-- header section -->
+    <header>
+      <nav class="navbar navbar-expand-lg px-5 fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="assets/logo.png" alt="" width="70" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="index.html#abtus">About us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="index.html#howplay">How does it work</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="index.html    #faq">FAQ's</a>
+              </li>
+              <!-- <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact us</a>
+                        </li> -->
+              <li class="nav-item">
+                <a class="nav-link" href="ad.html">Advertise with us</a>
+              </li>
             </ul>
-    
-            <div class="tab-content" id="myTabContent">
-                <div class="tab-pane fade show active" id="transparency" role="tabpanel" aria-labelledby="transparency-tab">
-                    <h4>Transparency</h4>
-                    <ul>
-                    <li>In order to play on the platform, each user must create a verified profile with a unique phone number and email.</li>
-                    <li>If there is any transaction that involves money, the user MUST be verified through a govt id and Payment methods needs to be only his and not anybody else’s. These are our 3 layer verifications.</li>
-                    <img src="assets/good-luck.png"   class="screenshot"/>
-                    <img src="assets/enter-comp.png"  class="screenshot"/>
-                    <img src="assets/join-quiz-1.png" class="screenshot"/>
-                    <li>The winners of each promotion, tournament and series are highlighted in-app and across izido’s social media channels.</li>
-                    <li>Izido invites professional quiz players to live stream their games and speak about their journey as a quiz player from time to time. Users can learn about the game by watching these livestreams, as well as learn about the challenges faced by professional quiz players in their daily lives.</li>
-                </ul>
-                </div>
-                <div class="tab-pane fade" id="know-your-opponent" role="tabpanel" aria-labelledby="know-your-opponent-tab">
-                    <h4>Know Your Opponent</h4>
-                    <ul>
-                        <li>While on any game, just click on the profile of any opponent and get access to the total amount cashed, tournaments won, performance at last few tournaments and location.</li>
-                        <li>Know your opponents’ playing style. In-depth opponent stats are available for each and every player on the platform for free so you can make informed decisions on how you play, based on how they play.</li>
-                    </ul>
-                </div>
-                <div class="tab-pane fade" id="unfair-gameplay-practices" role="tabpanel" aria-labelledby="unfair-gameplay-practices-tab">
-                    <h4>Unfair Gameplay Practices</h4>
-                    <p>Izido is committed towards ensuring that no unfair gameplay practices are occurring in the contest. These include, but are not limited to:</p>
-                    <ul>
-                        <li>
-                            <span class="fw-bold">Collusion</span> occurs when two or more players are playing in same contest and share and use that knowledge to abuse / manipulate the contest in order to win money from other players in the contest.</li>
-                        <li>
-                            <span class="fw-bold">Contest Dumping</span> occurs when players deliberately lose quiz in order to transfer money to few contestants only.</li>
-                        <li>
-                            <span class="fw-bold">Multiple Accounts:</span> Players are forbidden from opening / gaining access to accounts in their family member or friends’ name. Players are also not allowed to give access to their account to another player.</li>
-                        <li>
-                            <span class="fw-bold">IP Ghosting</span> involves a player attempting to change their Internet Protocol (IP) address or geo-location multiple times during a game without prior authorization from izido.</li>
-                        <li>
-                            <span class="fw-bold">Software Modifications:</span> Players are not allowed to reverse-engineer, decompile, modify or disassemble the izido software in any way.</li>
-                        <li>
-                            <span class="fw-bold">External Player Assistance Programs:</span> Players are not allowed to use external software that provides them with an unfair advantage during the game. This includes the use of artificial intelligence [robots] programs, such as but not limited to:</li>
-                    </ul>
-                    <ul class="mx-4">
-                        <li>
-                            <span class="fw-bold">Bots:</span> Bots are programs that perform automated actions on behalf of the player using predefined strategies. These programs read the information on question, compute actions to perform based on the defined strategy and perform the action automatically without the active involvement of the player in each hand.</li>
-                        <li>
-                            <span class="fw-bold">RTAs:</span> RTAs are extremely powerful tools that can extract all information about an active hand from a poker application, run a simulation and tell the best play in real-time. Such RTA tools are extremely powerful as they provide solver solutions to players while they are playing poker, making them basically unbeatable.</li>
-                    </ul>
-                </div>
-                <div class="tab-pane fade" id="securing-the-quiz" role="tabpanel" aria-labelledby="securing-the-quiz-tab">
-                    <h4>Securing the Quiz</h4>
-                    <ul>
-                        <li>Izido's internal surveillance team is always on hand to ensure that no unauthorized or illegal account gets access to the system i.e no unauthorized person gets access to or can influence gameplay or our software to gain an unfair advantage.</li>
-                        <li>All hands that are played on the platform are encrypted i.e. no one, including us, can see what hand you have been dealt until the end of the hand.</li>
-                        <li>Every single hand that has been played on Izido since its beginning contains a unique ID which can be used to retrieve and review the information for any hand of concern.</li>
-                        <li>Your login password is encrypted and only accessible to you - no one, including Izido employees are able to view or have knowledge of your password.</li>
-                        <li>Our surveillance team conducts regular automated checks by creating fraud risk scores for all players.</li>
-                        <li>While running the Izido app, players are not allowed to use unauthorized applications which may help them gain an unfair advantage.</li>
-                    </ul>
-                </div>
+            <div>
+              <a class="btn f-18 text-poppins fw-bold download-btn app-link"
+                >Download App</a
+              >
             </div>
           </div>
+        </div>
+      </nav>
+    </header>
 
+    <div class="main-fp-content">
+    <div class="mt-2 text-center fairplay">
+      <h1 class="text-orange mb-4 f-32 text-poppins">Fairplay Policy</h1>
+      <p class="text-light-brown f-500 f-18 text-poppins">
+        Izido is committed towards building a safe and secure gaming platform
+        that promotes fair play. We have no incentive to create a platform that
+        promotes unfair gameplay and proud to have one of the most secure online
+        gaming platforms in the world. Take a look at how we make this happen
+        below.
+      </p>
+    </div>
 
-      <!-- <div  class="nav-tab-2">
+    <div class="d-flex justify-content-between mt-5 mb-5">
+      <div>
+        <img src="assets/penalty.jpg" class="circular-image" />
+        <p class="img-text text-light-brown text-poppins">Deductions or penalties on winnings</p>
+      </div>
+      <div>
+        <img src="assets/blocking.jpg" class="circular-image" />
+        <p class="img-text text-light-brown text-poppins">Blocking of unfairly gained funds</p>
+      </div>
+      <div>
+        <img src="assets/suspend.jfif" class="circular-image" />
+        <p class="img-text text-light-brown text-poppins">Suspension of izido account</p>
+      </div>
+      <div>
+        <img src="assets/legal.jfif" class="circular-image" />
+        <p class="img-text text-light-brown text-poppins">Legal action under applicable law</p>
+      </div>
+    </div>
+
+    <div class="nav-tab-1 mt-5">
+      <ul class="nav nav-tabs justify-content-center mt-4 mb-4">
+        <li class="nav-item" role="presentation">
+          <a
+            class="nav-link section-link active text-poppins"
+            id="transparency-tab"
+            data-bs-toggle="tab"
+            href="#transparency"
+            role="tab"
+            aria-controls="transparency"
+            aria-selected="true"
+            >Transparency</a
+          >
+        </li>
+        <li class="nav-item" role="presentation">
+          <a
+            class="nav-link section-link text-poppins"
+            id="know-your-opponent-tab"
+            data-bs-toggle="tab"
+            href="#know-your-opponent"
+            role="tab"
+            aria-controls="know-your-opponent"
+            aria-selected="false"
+            >Know Your Opponent *</a
+          >
+        </li>
+        <li class="nav-item" role="presentation">
+          <a
+            class="nav-link section-link text-poppins"
+            id="unfair-gameplay-practices-tab"
+            data-bs-toggle="tab"
+            href="#unfair-gameplay-practices"
+            role="tab"
+            aria-controls="unfair-gameplay-practices"
+            aria-selected="false"
+            >Unfair Gameplay Practices</a
+          >
+        </li>
+        <li class="nav-item" role="presentation">
+          <a
+            class="nav-link section-link text-poppins"
+            id="securing-the-quiz-tab"
+            data-bs-toggle="tab"
+            href="#securing-the-quiz"
+            role="tab"
+            aria-controls="securing-the-quiz"
+            aria-selected="false"
+            >Securing the Quiz</a
+          >
+        </li>
+      </ul>
+
+      <div class="tab-content" id="myTabContent">
+        <div
+          class="tab-pane fade show active text-poppins"
+          id="transparency"
+          role="tabpanel"
+          aria-labelledby="transparency-tab"
+        >
+          <h4>Transparency</h4>
+          <ul>
+            <li>
+              In order to play on the platform, each user must create a verified
+              profile with a unique phone number and email.
+            </li>
+            <img src="assets/account-create.jfif" class="screenshot" />
+            <li>
+              If there is any transaction that involves money, the user MUST be
+              verified through a govt id and Payment methods needs to be only
+              his and not anybody else’s. These are our 3 layer verifications.
+            </li>
+            <img src="assets/user-details.jfif" class="screenshot mx-2" />
+            <img src="assets/user-payment.jfif" class="screenshot mx-2" />
+            <img src="assets/verify-kvc.jfif" class="screenshot mx-2" />
+            <li>
+              The winners of each promotion, tournament and series are
+              highlighted in-app and across izido’s social media channels.
+            </li>
+            <li>
+              Izido invites professional quiz players to live stream their games
+              and speak about their journey as a quiz player from time to time.
+              Users can learn about the game by watching these livestreams, as
+              well as learn about the challenges faced by professional quiz
+              players in their daily lives.
+            </li>
+          </ul>
+        </div>
+        <div
+          class="tab-pane fade text-poppins"
+          id="know-your-opponent"
+          role="tabpanel"
+          aria-labelledby="know-your-opponent-tab"
+        >
+          <h4>Know Your Opponent  <i>*coming soon</i></h4>
+          <ul>
+            <li>
+              While on any game, just click on the profile of any opponent and
+              get access to the total amount cashed, tournaments won,
+              performance at last few tournaments and location.
+            </li>
+            <li>
+              Know your opponents’ playing style. In-depth opponent stats are
+              available for each and every player on the platform for free so
+              you can make informed decisions on how you play, based on how they
+              play.
+            </li>
+          </ul>
+        </div>
+        <div
+          class="tab-pane fade text-poppins"
+          id="unfair-gameplay-practices"
+          role="tabpanel"
+          aria-labelledby="unfair-gameplay-practices-tab"
+        >
+          <h4>Unfair Gameplay Practices</h4>
+          <p>
+            Izido is committed towards ensuring that no unfair gameplay
+            practices are occurring in the contest. These include, but are not
+            limited to:
+          </p>
+          <ul>
+            <li>
+              <span class="fw-bold">Collusion</span> occurs when two or more
+              players are playing in same contest and share and use that
+              knowledge to abuse / manipulate the contest in order to win money
+              from other players in the contest.
+            </li>
+            <li>
+              <span class="fw-bold">Contest Dumping</span> occurs when players
+              deliberately lose quiz in order to transfer money to few
+              contestants only.
+            </li>
+            <li>
+              <span class="fw-bold">Multiple Accounts:</span> Players are
+              forbidden from opening / gaining access to accounts in their
+              family member or friends’ name. Players are also not allowed to
+              give access to their account to another player.
+            </li>
+            <li>
+              <span class="fw-bold">IP Ghosting</span> involves a player
+              attempting to change their Internet Protocol (IP) address or
+              geo-location multiple times during a game without prior
+              authorization from izido.
+            </li>
+            <li>
+              <span class="fw-bold">Software Modifications:</span> Players are
+              not allowed to reverse-engineer, decompile, modify or disassemble
+              the izido software in any way.
+            </li>
+            <li>
+              <span class="fw-bold">External Player Assistance Programs:</span>
+              Players are not allowed to use external software that provides
+              them with an unfair advantage during the game. This includes the
+              use of artificial intelligence [robots] programs, such as but not
+              limited to:
+            </li>
+          </ul>
+          <ul class="mx-4">
+            <li>
+              <span class="fw-bold">Bots:</span> Bots are programs that perform
+              automated actions on behalf of the player using predefined
+              strategies. These programs read the information on question,
+              compute actions to perform based on the defined strategy and
+              perform the action automatically without the active involvement of
+              the player in each hand.
+            </li>
+            <li>
+              <span class="fw-bold">RTAs:</span> RTAs are extremely powerful
+              tools that can extract all information about an active hand from a
+              poker application, run a simulation and tell the best play in
+              real-time. Such RTA tools are extremely powerful as they provide
+              solver solutions to players while they are playing poker, making
+              them basically unbeatable.
+            </li>
+          </ul>
+        </div>
+        <div
+          class="tab-pane fade text-poppins"
+          id="securing-the-quiz"
+          role="tabpanel"
+          aria-labelledby="securing-the-quiz-tab"
+        >
+          <h4>Securing the Quiz</h4>
+          <ul>
+            <li>
+              Izido's internal surveillance team is always on hand to ensure
+              that no unauthorized or illegal account gets access to the system
+              i.e no unauthorized person gets access to or can influence
+              gameplay or our software to gain an unfair advantage.
+            </li>
+            <li>
+              All hands that are played on the platform are encrypted i.e. no
+              one, including us, can see what hand you have been dealt until the
+              end of the hand.
+            </li>
+            <li>
+              Every single hand that has been played on Izido since its
+              beginning contains a unique ID which can be used to retrieve and
+              review the information for any hand of concern.
+            </li>
+            <li>
+              Your login password is encrypted and only accessible to you - no
+              one, including Izido employees are able to view or have knowledge
+              of your password.
+            </li>
+            <li>
+              Our surveillance team conducts regular automated checks by
+              creating fraud risk scores for all players.
+            </li>
+            <li>
+              While running the Izido app, players are not allowed to use
+              unauthorized applications which may help them gain an unfair
+              advantage.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- <div class="nav-tab-2">
          <ul class="nav justify-content-center mt-4 mb-4">
             <li class="nav-item">
-                <a class="nav-link" href="#transparency" >Transparency</a>
+                <a class="nav-link section-link" href="#transparency" >Transparency</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#know-your-opponent" >Know Your Opponent</a>
+                <a class="nav-link section-link" href="#know-your-opponent" >Know Your Opponent</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#unfair-gameplay-practices">Unfair Gameplay Practices</a>
+                <a class="nav-link section-link" href="#unfair-gameplay-practices">Unfair Gameplay Practices</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#securing-the-quiz">Securing the Quiz</a>
+                <a class="nav-link section-link" href="#securing-the-quiz">Securing the Quiz</a>
             </li>
         </ul>
 
@@ -231,5 +469,93 @@
             </ul>
         </section>
       </div> -->
-    </body>
+
+    </div>
+      <footer>
+        <div class="bg-orange py-5">
+            <div class="bg-white p-5 border-rad-50">
+                <div class="container-fliud bg-white">
+                    <div class="row">
+                        <div class="col-md-6 m-auto">
+                            <div class="text-center">
+                                <img src="assets/logo.png" alt="">
+                            </div>
+                        </div>
+                        <div class="col-md-6 text-poppins">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <p class="text-orange f-14 text-capitalize">useful links</p>
+                                    <div class="">
+                                        <div>
+                                            <a href="index.html" class="pt-1 f-12">Home</a>
+                                        </div>
+                                        <div>
+                                            <a href="index.html#abtus" class="pt-1 f-12">About us</a>
+                                        </div>
+                                        <!-- <div>
+                                            <a href="#howplay" class="pt-1 f-12">How to Work</a>
+                                        </div> -->
+                                        <div>
+                                            <a href="index.html#faq" class="pt-1 f-12">FAQ's</a>
+                                        </div>
+                                        <div>
+                                            <a href="contactUs.html" class="pt-1 f-12">Contact us</a>
+                                        </div>
+                                        <div>
+                                            <a href="refund.html" id="" class="pt-1 f-12">Refund Policy</a>
+                                        </li>
+                                    </div>
+                                        <div>
+                                            <a href="t&c.html" id="" class="pt-1 f-12">Terms & Conditions</a>
+                                        </li>
+                                    </div>
+
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                        </div>
+                        <div class="col-md-6">
+                            <div class="text-orange f-14 text-capitalize mt-2">Legal</div>
+                            <div>
+                                <a href="fairplay.html" class="pt-1 f-12">FairPlay</a>
+                            </div>
+                            <div>
+                                <a href="legal.html" class="pt-1 f-12">Legal Jurisdiction</a>
+                            </div>
+                            <div>
+                                <a href="limit.html" class="pt-1 f-12">Limits</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-5 text-center">
+                <div class="navFooterLine navFooterLinkLine navFooterPadItemLine navFooterCopyright">
+                    <ul class="f-500">
+                        <!-- <li class="nav_first"><a href="/gp/help/customer/display.html?nodeId=200545940&amp;ref_=footer_cou" id="" class="nav_a">Conditions of Use &amp; Sale</a> </li> -->
+                        <li>
+                            <a href="privacy.html" id="" class="nav_a">Privacy Notice </a>
+                        </li> &nbsp;
+                        <span> &#169; 2023, Bord Media Pvt. Ltd. or its affiliates Ltd.</span>
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </footer>
+  </body>
+
+  <script>
+    window.addEventListener('scroll', function () {
+        let navbar = document.querySelector('nav');
+        if (window.pageYOffset > 0) {
+            navbar
+                .classList
+                .add('sticky');
+        } else {
+            navbar
+                .classList
+                .remove('sticky');
+        }
+    });
+</script>
 </html>
