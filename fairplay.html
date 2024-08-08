@@ -256,7 +256,7 @@
             <li>
               Izido invites professional quiz players to live stream their games
               and speak about their journey as a quiz player from time to time.
-              Users can learn about the game by watching these livestreams, as
+              Users can learn about the quiz by watching these livestreams, as
               well as learn about the challenges faced by professional quiz
               players in their daily lives.
             </li>
@@ -271,7 +271,7 @@
           <h4>Know Your Opponent  <i>*coming soon</i></h4>
           <ul>
             <li>
-              While on any game, just click on the profile of any opponent and
+              While on any quiz, just click on the profile of any opponent and
               get access to the total amount cashed, tournaments won,
               performance at last few tournaments and location.
             </li>
@@ -316,7 +316,7 @@
             <li>
               <span class="fw-bold">IP Ghosting</span> involves a player
               attempting to change their Internet Protocol (IP) address or
-              geo-location multiple times during a game without prior
+              geo-location multiple times during a quiz without prior
               authorization from izido.
             </li>
             <li>
@@ -327,7 +327,7 @@
             <li>
               <span class="fw-bold">External Player Assistance Programs:</span>
               Players are not allowed to use external software that provides
-              them with an unfair advantage during the game. This includes the
+              them with an unfair advantage during the quiz. This includes the
               use of artificial intelligence [robots] programs, such as but not
               limited to:
             </li>
@@ -339,16 +339,16 @@
               strategies. These programs read the information on question,
               compute actions to perform based on the defined strategy and
               perform the action automatically without the active involvement of
-              the player in each hand.
+              the player in each quiz.
             </li>
-            <li>
+            <!-- <li>
               <span class="fw-bold">RTAs:</span> RTAs are extremely powerful
               tools that can extract all information about an active hand from a
               poker application, run a simulation and tell the best play in
               real-time. Such RTA tools are extremely powerful as they provide
               solver solutions to players while they are playing poker, making
               them basically unbeatable.
-            </li>
+            </li> -->
           </ul>
         </div>
         <div
@@ -525,6 +525,9 @@
                             <div>
                                 <a href="limit.html" class="pt-1 f-12">Limits</a>
                             </div>
+                            <div>
+                              <a href="gameOfSkill.html" class="pt-1 f-12">Game Of Skill</a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -557,5 +560,27 @@
                 .remove('sticky');
         }
     });
+
+    // Function to detect iOS devices
+    function isIOS() {
+            return /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+        }
+
+        // Function to dynamically set the href attribute based on device
+        function setDynamicLinks() {
+            var links = document.querySelectorAll('.app-link');
+            links.forEach(function (link) {
+                if (isIOS()) {
+                    // iOS link
+                    link.href = "https://apps.apple.com/app/izido/id6503604529";
+                } else {
+                    // Android link
+                    link.href = "https://play.google.com/store/apps/details?id=com.calance.moneyquiz";
+                }
+            });
+        }
+
+        // Call the function when the page loads
+        window.onload = setDynamicLinks;
 </script>
 </html>
